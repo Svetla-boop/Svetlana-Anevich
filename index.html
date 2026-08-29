@@ -440,7 +440,7 @@ h3{font-size:clamp(22px,3vw,34px);line-height:1.05;margin-bottom:10px}
 
   const toast=document.getElementById('toast');
   document.getElementById('copyPortfolio').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(location.href); toast.textContent='Ссылка скопирована'; }
+    try { await navigator.clipboard.writeText('https://svetla-boop.github.io/Svetlana-Anevich/'); toast.textContent='Ссылка скопирована'; }
     catch { toast.textContent='Скопируйте адрес из строки браузера'; }
     toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),1800);
   });
